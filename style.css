@@ -1,0 +1,73 @@
+body {
+  padding: 3rem;
+  background-color: rgb(168, 48, 48);
+  
+
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  font-size: 5rem;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: rgb(21, 29, 124);
+  text-shadow: 2px 2px 0px white;
+}
+
+#game div {
+  position: relative;
+  left: 2%;
+  right: 2%;
+  width: 200px;
+  height: 200px;
+  margin: 2%;
+  display: inline-flex;
+  border-radius: 2rem;
+}
+#game div.theCard {
+  pointer-events: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  /* transform: rotateY(180deg); */
+ 
+}
+#game div.flipped {
+
+  font-size: 3rem;
+  letter-spacing: .3em;
+  text-transform: lowercase;
+  font-family: 'Comfortaa', cursive;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  justify-content: center;
+  background-color:rgb(21, 29, 124);
+  margin: 0%;
+  left: 0%;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  max-height: 0px;
+  backface-visibility: hidden;
+}
+
+
+
+.president {
+  pointer-events: none;
+  object-fit:cover;
+  background-color: transparent;
+  max-width: 100%;
+  border-radius: 2rem;
+  transition: transform .8s;
+  transform: rotateY(180deg);
+}
+
+.theCard.clicked{
+  pointer-events: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  transform: rotateY(180deg);
+}
+
